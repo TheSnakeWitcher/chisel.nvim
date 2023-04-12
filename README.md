@@ -1,16 +1,16 @@
 # Index
 
 
-1.[#Usage](Usage)
-2.[#Installation](Installation)
-3.[#Configuration](Configuration)
-4.[#Documentation](Documentation)
+1. [Usage](#Usage)
+2. [Installation](#Installation)
+3. [Configuration](#Configuration)
+4. [Documentation](#Documentation)
 
 
 # Usage
 
 
-Open chisel with `:Chisel`
+`:Chisel`
 
 
 # Installation
