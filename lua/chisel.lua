@@ -23,6 +23,15 @@ function M.open()
     }):toggle()
 end
 
+-- launches the REPL and loads the cached session with {id} in case it exists
+function M.load(id)
+    Terminal:new({
+        cmd = "chisel load " .. id ,
+        direction = M.config.load_direction,
+        close_on_exit = false,
+    }):toggle()
+end
+
 -- list cached sessions stored in ~/.foundry/cache/chisel
 function M.list()
     local results = {}
@@ -59,15 +68,6 @@ function M.list()
     }):sync()
 
     return results
-end
-
--- launches the REPL and loads the cached session with {id} in case it exists
-function M.load(id)
-    Terminal:new({
-        cmd = "chisel load " .. id ,
-        direction = M.config.load_direction,
-        close_on_exit = false,
-    }):toggle()
 end
 
 -- displays the source code of the sessions's REPL contract with {id} in case it exists
