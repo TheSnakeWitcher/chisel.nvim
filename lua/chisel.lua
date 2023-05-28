@@ -80,7 +80,7 @@ function M.view(id)
 end
 
 -- deletes all cache sessions within ~/.foundry/cache/chisel directory.
--- NOTE: These sessions are unrecoverable, so use this command with care.
+-- NOTE: These sessions are unrecoverable, so use this function with care.
 function M.clear_cache()
     Job:new({
         command = "chisel" ,
