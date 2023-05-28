@@ -1,20 +1,19 @@
-# Index
-
-
-1. [Chisel.nvim](#Chisel.nvim)
-2. [Installation](#Installation)
-3. [Configuration](#Configuration)
-4. [Documentation](#Documentation)
-5. [License](#License)
-
-
 # Chisel.nvim
 
 
 Small plugin to more conveniently/easily interact with
-[https://github.com/foundry-rs/foundry/tree/master/chisel](chisel) from
-[https://github.com/foundry-rs/foundry](foundry) toolkit
-inside neovim.
+[chisel](https://github.com/foundry-rs/foundry/tree/master/chisel) from
+[foundry](https://github.com/foundry-rs/foundry) toolkit
+inside neovim. Any contributions are welcome and appreciated.
+
+
+# Index
+
+
+1. [Installation](#Installation)
+2. [Configuration](#Configuration)
+3. [Documentation](#Documentation)
+4. [License](#License)
 
 
 # Installation
@@ -83,7 +82,7 @@ vim.api.nvim_create_user_command("ChiselClearCache", chisel.clear_cache , {desc 
 
 ### Telescope integration
 
-In some place of your [https://github.com/nvim-telescope/telescope.nvim](telescope) config put.
+In some place of your [telescope](https://github.com/nvim-telescope/telescope.nvim) config put.
 
 ```lua
 telescope.load_extension("chisel")
