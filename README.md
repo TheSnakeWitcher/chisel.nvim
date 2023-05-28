@@ -24,8 +24,9 @@ snippet corresponds to packer.
 
 ```lua
 use {
-    "TheSnakeWitcher/chisel.nvim,
+    "TheSnakeWitcher/chisel.nvim",
     requires = {
+        "nvim-lua/plenary.nvim",
         "akinsho/toggleterm.nvim",
         "nvim-telescope/telescope.nvim",
     },
